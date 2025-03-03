@@ -1,0 +1,122 @@
+/* start global rules*/
+html{
+    scroll-behavior: smooth;
+transition: 0.6s;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo",serif;
+}
+:root{
+    --main-color:#260553;
+    --main-transation-duration:0.5s;
+}
+.container{
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+
+}
+@media (min-width: 768px) {
+    .container{
+        width: 300px;
+    }
+}
+@media (min-width: 991px) {
+    .container{
+        width: 400px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 500px;
+    }
+}
+/* end global rules */
+body{
+    background-color: #eee;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px;
+  
+    
+}
+.color-grps{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+gap: 10px;
+
+}
+.green,
+.red,
+.yellow,
+.reset{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 40px;
+    text-align: center;
+}
+.green{
+    background-color: #2ecc71;
+
+    color: white;
+ 
+
+}
+.red{
+    background-color: #e74c3c;
+
+    color: white;
+
+}
+.yellow{
+    background-color: #ffbe00;
+
+    color: white;
+ 
+
+}
+.reset{
+    background-color: #eee;
+ 
+    color: black;
+  
+}
+.green:hover,
+.yellow:hover,
+.red:hover,
+.reset:hover{
+    transform: translateY(-2px);
+ 
+}
